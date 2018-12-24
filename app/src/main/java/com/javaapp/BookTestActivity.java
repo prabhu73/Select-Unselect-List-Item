@@ -68,7 +68,6 @@ public class BookTestActivity extends AppCompatActivity implements LabTestSelect
 
     public void removePhoneKeypad() {
         if (getCurrentFocus() != null && getCurrentFocus().getWindowToken() != null) {
-            System.out.println("getCurrentFocus() in frag");
             InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
             IBinder binder = getCurrentFocus().getWindowToken();
